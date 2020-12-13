@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+  .galleryTitle{
+    text-align: center;
+  }
+  .addImageColumn{
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  .imageDetailsColumn{
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .galleryTitle{
+    text-align: left;
+  }
+  .addImageButton{
+    float: right;
+  }
+}
+.cardElements{
+  overflow: hidden;
+  margin: 0 auto;
+}
+.cardElements img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+.cardElements:hover{
+  box-shadow: 0 0 20px rgba(33,33,33,.6);
+}
+.cardElements:hover img {
+  transform: scale(1.2);
+}
+.nav-item:hover{
+  box-shadow: 0 0 10px rgba(33,33,33,.6);
+  background: rgba(33,33,33,0.6);
+  }
+.activeLink{
+  border-bottom: 2px solid rgb(25, 37, 43);
+}
+.cardImage{
+  height: 250px;
+}
+.cardImageTitle{
+  position: absolute;
+  bottom: 3px;
+  width: 100%;
+  height: 25%;
+  background: rgba(0, 0, 3, 0.5);
+}

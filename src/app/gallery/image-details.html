@@ -1,0 +1,35 @@
+<div class="container mt-5 bg-white pb-2 mb-2">
+  <div class="row bg-dark rounded-top">
+    <div class="col-12 col-md-8">
+      <p class="text-white display-4 galleryTitle">Image Details</p>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-12 col-md-6">
+      <img [src]="image?.url" class="img-fluid" [alt]="image?.title">
+    </div>
+    <div class="col-12 col-md-6 imageDetailsColumn">
+      <label for="title" class="font-weight-bold h5">Image title:</label>
+      <p id="title">{{image?.title}}</p>
+      <label for="albumId" class="font-weight-bold h5">Album title:</label>
+      <p id="albumId">{{album?.title}}</p>
+      <label for="imageUrl" class="font-weight-bold h5">Image url:</label>
+      <p id="imageUrl">{{image?.url}}</p>
+      <label for="thumbnailUrl" class="font-weight-bold h5">Thumbnail url:</label>
+      <p id="thumbnailUrl">{{image?.thumbnailUrl}}</p>
+      <div class="row justify-content-center mt-4">
+        <div class="col-3">
+          <button [routerLink]="['/saveImage', image?.id]" class="btn btn-dark btn-block text-white">Edit <i class="fa fa-edit"></i></button>
+        </div>
+        <div class="col-3">
+          <button (click)="deleteImage()" class="btn btn-block btn-danger text-white">Delete <i class="fa fa-trash text-white"></i></button>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-2">
+        <div class="col-3">
+          <button [routerLink]="['/images']" class="btn btn-block btn-light text-dark"><i class="fa fa-arrow-left"></i> Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
