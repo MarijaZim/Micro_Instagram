@@ -6,7 +6,7 @@ import {tap} from 'rxjs/operators';
 
 @Injectable()
 export class GalleryService{
-  private url = 'http://jsonplaceholder.typicode.com/photos';
+  private url = 'https://jsonplaceholder.typicode.com/photos';
   images: any[];
   constructor(private http: HttpClient) {
     this.images = [];

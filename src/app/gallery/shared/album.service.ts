@@ -5,7 +5,7 @@ import {Album} from '../album/album';
 
 @Injectable()
 export class AlbumService{
-  private url = 'http://jsonplaceholder.typicode.com/albums';
+  private url = 'https://jsonplaceholder.typicode.com/albums';
   albums: any[];
   constructor(private http: HttpClient) {
     this.albums = [];
